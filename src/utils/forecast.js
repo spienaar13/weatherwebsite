@@ -15,7 +15,7 @@ const forecast = (lat, long, callback) => {
             const data = body.current
             callback(undefined, "Today's weather is " + data.weather_descriptions[0] + 
             " at " + data.temperature + ", UV indes of " + data.uv_index + " and " + data.precip + 
-            " precipitation"
+            " precipitation. Wind speed is " + data.wind_speed
             )
         }
     })
